@@ -1,0 +1,25 @@
+{
+  "name": "17.9-Node.js-file_uploading_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piet-Tia/Kodilla-17.9-Node.js-file_uploading_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Piet-Tia/Kodilla-17.9-Node.js-file_uploading_page/issues"
+  },
+  "homepage": "https://github.com/Piet-Tia/Kodilla-17.9-Node.js-file_uploading_page#readme",
+  "dependencies": {
+    "colors": "^1.3.2",
+    "formidable": "^1.2.1"
+  }
+}
