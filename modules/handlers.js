@@ -5,7 +5,12 @@ exports.upload = function (request, response) {
 	console.log("Rozpoczynam obsługę żądania upload.");
 	const form = new formidable.IncomingForm();
 	form.parse(request, function (error, fields, files) {
-		fs.renameSync(files.upload.path, "test.png");
+//		fs.renameSync(files.upload.path, "test.png");
+		fs.readFile(files.upload.path, function(err,content) {
+			fs.writeFile('./test.png', content, function(){
+				console.log('The file has been saved!');
+			});
+		});
 		response.writeHead(200, { "Content-Type": "text/html" });
 		response.write("received image:<br/>");
 		response.write("<img src='/show' />");
